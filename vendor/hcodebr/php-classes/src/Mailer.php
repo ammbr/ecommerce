@@ -10,7 +10,7 @@ class Mailer {
 		const PASSWORD = "senha";
 		const NAME_FROM = "nome";
 
-		private $email;
+		private $mail;
 
 	public function __construct($toAddress, $toName, $subject, $tplName, $data = array())
 	{

@@ -74,6 +74,8 @@ $app->get('/admin/orders/:idorder',function($idorder) {
 
 	$page = new PageAdmin();
 
+    date_default_timezone_set("America/Sao_Paulo");
+    
 	$page->setTpl('order', [
 		'order'=>$order->getValues(), 
 		'cart'=>$cart->getValues(), 
